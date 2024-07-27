@@ -5,7 +5,10 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
+                 Script {
                 echo 'Hello World'
+                echo pwd()
+                }
             }
         }
     }
